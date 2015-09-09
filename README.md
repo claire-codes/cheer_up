@@ -2,6 +2,8 @@
 
 Daft Ruby Gem
 
+bundle exec bin/cheer-up hello bob
+
 ## Installation
 
 Add this line to your application's Gemfile:

@@ -10,8 +10,15 @@ module CheerUp
 	that I'm not going to fill out right now
 	MEH
 
-		def hello(name)
-			`say "howdy ho #{name}"`
+		def initialize
+			@cheers = ["Howdy ho", "Up yours"]
+		end
+
+		def hello(name=nil)
+			cheer = @cheers.sample
+			`say "#{cheer} #{name}"`
+			name ? greeting = "#{cheer} #{name}" : greeting = "#{cheer}"
+			puts greeting
 		end
 	end
   
