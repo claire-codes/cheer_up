@@ -34,6 +34,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cheer_up.
 
+_Wittier ways to cheer someone up are particularly welcome._
+
 
 ## License
 

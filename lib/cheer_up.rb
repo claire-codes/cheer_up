@@ -4,7 +4,7 @@ require 'Thor'
 module CheerUp 
 	class Cli < Thor
 
-	desc 'hello name', 'this will greet you'
+	desc 'cheer up "name"', 'cheers you up with a name if you provide one'
 	long_desc <<-MEH
 	This is a longer description
 	that I'm not going to fill out right now
@@ -14,17 +14,18 @@ module CheerUp
 			@cheers = ["Howdy ho", "Up yours"]
 		end
 
-		def hello(name=nil)
+		def cheer_up(name=nil)
 			cheer = @cheers.sample
-			`say "#{cheer} #{name}"`
+			system('say "#{cheer} #{name}"') if osx?
 			name ? greeting = "#{cheer} #{name}" : greeting = "#{cheer}"
 			puts greeting
 		end
+
+		no_commands {
+			def osx?
+				RbConfig::CONFIG['host_os'].downcase.include?("darwin")
+			end
+		}
 	end
-  
-	# def self.cheer_up(name)
-	# 	`say 'cheer up #{name}'`
-	# 	puts "cheer up #{name}"
-	# end
 
 end
