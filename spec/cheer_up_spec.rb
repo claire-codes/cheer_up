@@ -16,7 +16,7 @@ describe CheerUp do
     cheerObj = CheerUp::Cli.new
 
     expect(STDOUT).to receive(:puts).with('Eat my shorts bob')
-    expect(cheerObj).to receive(:system).with('say "#{cheer} #{name}"')
+    expect(cheerObj).to receive(:system).with('say Eat my shorts bob')
     cheerObj.cheer_up "bob"
   end
 
@@ -41,11 +41,13 @@ describe CheerUp do
     }.to raise_error(ArgumentError)
   end
 
-# hmm this does not work
+  # test passes and works irl but this test still says it?! :S
   it 'still prints if you\'re not on osx' do
     cheerObj = CheerUp::Cli.new
     cheerObj.stub(:osx?) { false }
     expect(STDOUT).to receive(:puts).with('Howdy ho brenda')
+
+    expect(cheerObj).to receive(:system).with('say Howdy ho brenda')
     CheerUp::Cli.new.cheer_up "brenda"
   end
 

@@ -15,10 +15,9 @@ module CheerUp
 		end
 
 		def cheer_up(name=nil)
-			cheer = @cheers.sample
-			system('say "#{cheer} #{name}"') if osx?
-			name ? greeting = "#{cheer} #{name}" : greeting = "#{cheer}"
-			puts greeting
+			cheer = "#{@cheers.sample} #{name}".strip
+			system("say #{cheer}") if osx?
+			puts "#{cheer}"
 		end
 
 		no_commands {
