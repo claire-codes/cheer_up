@@ -1,8 +1,8 @@
 # CheerUp
 
-Daft Ruby Gem
+My First [Very Daft] Ruby Gem
 
-bundle exec bin/cheer-up hello bob
+Having a bad day? Need cheering up? Get your Mac to say something cheery to you with this Gem - although Mac isn't having a great day either.
 
 ## Installation
 
@@ -22,17 +22,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+From the command line:
+    
+    $ cheer up
 
-## Development
+Also accepts an optional name arg if you want to be more personal.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+    $ cheer up Antony
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cheer_up.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cheer_up, although I probably don't know how to fix it.
 
 _Wittier ways to cheer someone up are particularly welcome._
 

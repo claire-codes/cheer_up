@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Claire Parker']
   spec.email         = ['claire.parker87@gmail.com']
 
-  spec.summary       = %q{ Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{ Mac's terminal says something to cheer you up. }
+  spec.description   = %q{ Mac's say command says something cheery to you, although your Mac isn't as sympathetic as you think. }
   spec.homepage      = 'https://github.com/claireparker/cheer_up'
   spec.license       = 'MIT'
 
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
   else
-    raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
+    fail 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
