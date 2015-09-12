@@ -1,3 +1,7 @@
+## Note
+
+Alas I was in the process of releasing this as a Gem before I realised that a the cheer_up gem already existed ... you can now find the proper one as `cheerup` and this will stay here for posterity. R.I.P. repo.
+
 # CheerUp
 
 My First [Very Daft] Ruby Gem
