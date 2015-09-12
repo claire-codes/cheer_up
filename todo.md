@@ -12,5 +12,6 @@ use RbConfig::CONFIG['host_os'] instead of RUBY_PLATFORM
 * It's not testing in the context of the command line - can you test the CLI?
 * ~~Still not testing the say command?? Or rather a system command~~
 * Why does say not actually execute when testing system??
+* Do something better with handling names and cleaning up the formatting
 
 -> _Then you can publish it!_

@@ -3,28 +3,25 @@ require 'Thor'
 
 module CheerUp
   class Cli < Thor
-    desc 'cheer up "name"', 'cheers you up with a name if you provide one'
+    desc 'up "name"', 'cheers you up with a name if you provide one'
     long_desc <<-MEH
       A sarcastic phrase spoken by the Terminal, which probably
       won't cheer whoever it's directed at up.
     MEH
 
-    def cheer_up(name = nil)
+    def up(name = nil)
       phrases = [
         "My heart bleeds for you",
-        "Sorry I wasn't listening, can you repeat that",
-        "You'll live",
         "No one cares",
         "Get over yourself",
-        "That's nice",
         "I'm playing the world's saddest song on the world's tiniest violin, just for you",
         "Everything's gonna be alright",
-        "Oh dear",
+        "Cry me a river",
         "Oh dearie me",
-        "Don't worry, it might never happen",
-        "Worse things have happened",
+        "It might never happen",
         "As a wise fish once said, don't worry be happy",
-        "Calm down, calm down"
+        "Calm down, calm down",
+        "Always look on the bright side of life"
       ]
 
       cheer_up = "#{phrases.sample} #{name}".strip
